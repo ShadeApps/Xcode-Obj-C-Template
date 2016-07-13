@@ -1,0 +1,35 @@
+//
+//  newApp.pch
+//  newApp
+//
+//  Created by Сергей Грищёв on 17.02.16.
+//  Copyright © 2016 ShadeApps. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <MDMCoreData.h>
+
+#import "Constants.h"
+
+#import "CBTFunctions.h"
+#import "SHDNetwork.h"
+
+#import "AppDelegate.h"
+#import "SHDImageChooser.h"
+
+#import "SHDDefaultsManager.h"
+#import "UIView+roundLayer.h"
+#import "UILabel+Boldify.h"
+
+#endif

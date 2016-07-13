@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHDImageChooserPopupView">
+            <connections>
+                <outlet property="btnCancel" destination="pdU-uu-c6f" id="lij-Hq-wX3"/>
+                <outlet property="btnChooseFromLibrary" destination="Fdc-Vm-g8F" id="9gw-bq-jS4"/>
+                <outlet property="btnMakePhoto" destination="ub0-Aj-iyf" id="sPV-S6-GCN"/>
+                <outlet property="container" destination="iN0-l3-epB" id="N9g-Id-6az"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-ym-YDb">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-Aj-iyf">
+                            <rect key="frame" x="12" y="18" width="576" height="45"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="SHz-MG-aMb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Сделать фото">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnMakePhotoTapped:" destination="-1" eventType="touchUpInside" id="fGA-RY-eFu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdc-Vm-g8F">
+                            <rect key="frame" x="12" y="79" width="576" height="45"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="coY-P9-mr6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Выбрать из фотоальбома">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnChooseFromLibraryTapped:" destination="-1" eventType="touchUpInside" id="6Zd-HN-lim"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="9Bc-xp-5T6"/>
+                        <constraint firstAttribute="trailing" secondItem="Fdc-Vm-g8F" secondAttribute="trailing" constant="12" id="I4D-8p-A6G"/>
+                        <constraint firstItem="ub0-Aj-iyf" firstAttribute="leading" secondItem="ccL-ym-YDb" secondAttribute="leading" constant="12" id="INT-Ia-V6u"/>
+                        <constraint firstItem="Fdc-Vm-g8F" firstAttribute="top" secondItem="ub0-Aj-iyf" secondAttribute="bottom" constant="16" id="LBy-lk-wfI"/>
+                        <constraint firstAttribute="trailing" secondItem="ub0-Aj-iyf" secondAttribute="trailing" constant="12" id="Zkh-BD-6pN"/>
+                        <constraint firstItem="Fdc-Vm-g8F" firstAttribute="leading" secondItem="ccL-ym-YDb" secondAttribute="leading" constant="12" id="h2X-IZ-d5f"/>
+                        <constraint firstItem="ub0-Aj-iyf" firstAttribute="top" secondItem="ccL-ym-YDb" secondAttribute="top" constant="18" id="jFn-FW-Mj5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-qt-bfi">
+                    <rect key="frame" x="0.0" y="140" width="600" height="70"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdU-uu-c6f">
+                            <rect key="frame" x="12" y="13" width="576" height="45"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="PLR-o2-YfM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="ОТМЕНА">
+                                <color key="titleColor" red="0.64313725489999995" green="0.66274509800000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnCancelTapped:" destination="-1" eventType="touchUpInside" id="ajT-GS-zbP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pdU-uu-c6f" firstAttribute="leading" secondItem="Ob0-qt-bfi" secondAttribute="leading" constant="12" id="6ZN-Cf-GeH"/>
+                        <constraint firstAttribute="trailing" secondItem="pdU-uu-c6f" secondAttribute="trailing" constant="12" id="I6d-Jv-3S7"/>
+                        <constraint firstItem="pdU-uu-c6f" firstAttribute="centerY" secondItem="Ob0-qt-bfi" secondAttribute="centerY" id="Kyc-Dt-kYO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ob0-qt-bfi" secondAttribute="bottom" id="2AS-36-ck5"/>
+                <constraint firstAttribute="trailing" secondItem="Ob0-qt-bfi" secondAttribute="trailing" id="2eu-V9-Q3m"/>
+                <constraint firstAttribute="trailing" secondItem="ccL-ym-YDb" secondAttribute="trailing" id="3uL-uK-kCS"/>
+                <constraint firstItem="ccL-ym-YDb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Eof-Vr-SFa"/>
+                <constraint firstItem="Ob0-qt-bfi" firstAttribute="top" secondItem="ccL-ym-YDb" secondAttribute="bottom" id="Gfd-WC-7ah"/>
+                <constraint firstItem="Ob0-qt-bfi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JwJ-2G-m4n"/>
+                <constraint firstItem="ccL-ym-YDb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qyh-ef-OXq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+</document>
