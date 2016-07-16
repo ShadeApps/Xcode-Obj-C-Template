@@ -20,6 +20,8 @@ Written entirely on plain old Objective-C and extremely extensible.
 Clone the repo and run ```$ pod intsall``` in the dedicated project folder.
 You could also use the built-in **PodInstall.command** file if you're super lazy.
 
+⚠️ In order to launch the project, you need either to remove Fabric & Crashlytics from the project, or go to Target, Build Settings, Run Script & Edit this - line - ```./Fabric.framework/run``` ⚠️ 
+
 ## Compatibility
 
 Tested on iPhone and iPad with iOS 8.0 and up, 9.0 and up and iOS 10.0 Developer Beta 1 & 2. Project minimal deployment target is iOS 8.0.
